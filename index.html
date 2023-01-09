@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+</head>
+
+<body>
+  <nav class="bg-gray-800">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a class="text-xl font-bold text-white">Weather App</a>
+      <form class="flex items-center">
+        <input id='location' class="bg-gray-700 rounded-full py-2 px-5 text-white focus:outline-none" type="text"
+          placeholder="Search your location">
+        <button id="search-location" type="submit"
+          class="bg-gray-600 rounded-full py-2 px-3 text-white ml-4 focus:outline-none">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <main class="bg-white">
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-8 gap-x-8 py-3 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+      <div id="output">
+
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
